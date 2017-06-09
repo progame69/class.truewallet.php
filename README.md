@@ -87,7 +87,6 @@ echo $wallet->Profile($token);
 <hr>
 <h3>Topup</h3>
 <pre>
-$wallet = new TrueWallet('YOUR EMAIL','YOUR PASSWORD');
 $token = json_decode($wallet->GetToken(),true)['data']['accessToken']; 
 echo $wallet->Topup('เลขบบัตรทรูมั่นนี่',$token);
 </pre>
