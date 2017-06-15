@@ -2,7 +2,7 @@
 
 $wallet = new TrueWallet('YOUR EMAIL','YOUR PASSWORD','email');<br>
 OR<br>
-$wallet = new TrueWallet('YOUR PHONNUMBER','YOUR PIN','mobile');
+$wallet = new TrueWallet('YOUR PHONENUMBER','YOUR PIN','mobile');
 
 
 <h3>Login GetToken</h3>
