@@ -2,9 +2,9 @@
 class TrueWallet{
 	public  $username;
 	public  $password;
+	public  $login_type; 
 	private $passhash;
 	//Config TrueWallet ห้ามแก้ไขหากไม่รู้ค่าที่แท้จริง
-	private $login_type = "email"; 
 	private $api_signin = "https://api-ewm.truemoney.com/api/v1/signin?&"; 
 	private $api_profile = "https://api-ewm.truemoney.com/api/v1/profile/"; 
 	private $api_topup = "https://api-ewm.truemoney.com/api/api/v1/topup/mobile/"; 
@@ -18,9 +18,10 @@ class TrueWallet{
 	private $mobileTracking = "dJyFzn\/GIq7lrjv2RCsZbphpp0L\/W2+PsOTtOpg352mgWrt4XAEAAA=="; 
 	//End Config
 	
-	public function __construct($user,$pass) {
+	public function __construct($user,$pass,$type) {
 		$this->username = $user;
 		$this->password = $pass;
+		$this->login_type = $type;
 		$this->passhash = sha1($user.$pass);
 	}
 
