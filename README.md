@@ -1,7 +1,7 @@
 # class.truewallet.php
 
-$wallet = new TrueWallet('YOUR EMAIL','YOUR PASSWORD','email');
-OR
+$wallet = new TrueWallet('YOUR EMAIL','YOUR PASSWORD','email');<br>
+OR<br>
 $wallet = new TrueWallet('YOUR PHONNUMBER','YOUR PIN','mobile');
 
 
