@@ -1,5 +1,4 @@
-# class.truewallet.php
-
+# class.truewallet.php ( ต้นฉบับที่ทำเอาไว้ แจกฟรีไม่เคยคิดเงินใครเพราะฉนั้น ไอ้พวกก๊อปๆแล้วไปแก้ของตัวเองแล้วเอาไปเก็บเงินไม่รู้สึกอะไรบ้างเลยหรอ )
 $wallet = new TrueWallet('YOUR EMAIL','YOUR PASSWORD','email');<br>
 OR<br>
 $wallet = new TrueWallet('YOUR PHONENUMBER','YOUR PIN','mobile');
