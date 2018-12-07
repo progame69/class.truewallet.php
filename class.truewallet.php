@@ -5,11 +5,11 @@ class TrueWallet{
 	public  $login_type; 
 	private $passhash;
 	//Config TrueWallet ห้ามแก้ไขหากไม่รู้ค่าที่แท้จริง
-	private $api_signin = "https://api-ewm.truemoney.com/api/v1/signin?&"; 
-	private $api_profile = "https://api-ewm.truemoney.com/api/v1/profile/"; 
-	private $api_topup = "https://api-ewm.truemoney.com/api/api/v1/topup/mobile/"; 
-	private $api_gettran = "https://api-ewm.truemoney.com/api/v1/profile/transactions/history/"; 
-	private $api_checktran = "https://api-ewm.truemoney.com/api/v1/profile/activities/"; 
+	private $api_signin = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/signin?&"; 
+	private $api_profile = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/"; 
+	private $api_topup = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/api/v1/topup/mobile/"; 
+	private $api_gettran = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/transactions/history/"; 
+	private $api_checktran = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/activities/"; 
 	private $device_os = "android"; 
 	private $device_id = "d520d0d12d0d48cb89394905168c6ed5"; 
 	private $device_type = "CPH1611"; 
