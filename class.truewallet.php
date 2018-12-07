@@ -5,6 +5,9 @@ class TrueWallet{
 	public  $login_type; 
 	private $passhash;
 	//Config TrueWallet ห้ามแก้ไขหากไม่รู้ค่าที่แท้จริง
+	/*
+	แก้ไข URL ใหม่
+	*/
 	private $api_signin = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/signin?&"; 
 	private $api_profile = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/"; 
 	private $api_topup = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/api/v1/topup/mobile/"; 
