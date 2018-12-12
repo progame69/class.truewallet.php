@@ -33,7 +33,7 @@ class TrueWallet{
 	public function GetToken(){
 		$url = $this->api_signin.'device_os='.$this->device_os.'&device_id='.$this->device_id.'&device_type='.$this->device_type.'&device_version='.$this->device_version.'&app_name='.$this->app_name.'&app_version='.$this->app_version;
 		$header = array(
-			"Host: api-ewm.truemoney.com",
+			"Host: mobile-api-gateway.truemoney.com",
 			"Content-Type: application/json"
 		);
 		$postfield = array(
@@ -50,27 +50,27 @@ class TrueWallet{
 
 	public function Profile($token){
 		$url = $this->api_profile.$token.'?&device_os=android&device_id='.$this->device_id.'&device_type='.$this->device_type.'&device_version='.$this->device_version.'&app_name='.$this->app_name.'&app_version='.$this->app_version;
-		$header = array("Host: api-ewm.truemoney.com");
+		$header = array("Host: mobile-api-gateway.truemoney.com");
 		return $this->wallet_curl($url,false,$header);
 	
 	}
 
 	public function Topup($cashcard,$token){
 		$url = $this->api_topup.time()."/".$token."/cashcard/".$cashcard;
-		$header = array("Host: api-ewm.truemoney.com");
+		$header = array("Host: mobile-api-gateway.truemoney.com");
 		return $this->wallet_curl($url,true,$header);
 	}
 	
 	public function getTran($token,$start,$end){
 		$url = $this->api_gettran.$token.'/?startDate='.$start.'&endDate='.$end.'&limit=20&page=1&type=&action=';
-		$header = array("Host: api-ewm.truemoney.com");
+		$header = array("Host: mobile-api-gateway.truemoney.com");
 		return $this->wallet_curl($url,false,$header);	
 		//return $url;	
 	}
 	
 	public function CheckTran($token,$id){
 		$url = $this->api_checktran.$id.'/detail/'.$token.'?&device_os=android&device_id='.$this->device_id.'&device_type='.$this->device_type.'&device_version='.$this->device_version.'&app_name='.$this->app_name.'&app_version='.$this->app_version;
-		$header = array("Host: api-ewm.truemoney.com");
+		$header = array("Host: mobile-api-gateway.truemoney.com");
 		return $this->wallet_curl($url,false,$header);	
 	}
 	
